@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'UIView-MBProgressHUD_Example' do
+  pod 'UIView-MBProgressHUD', :path => '../'
+
+  target 'UIView-MBProgressHUD_Tests' do
+    inherit! :search_paths
+
+    pod 'Kiwi'
+    pod 'FBSnapshotTestCase'
+  end
+end
