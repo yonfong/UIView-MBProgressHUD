@@ -7,6 +7,7 @@
 //
 
 #import "YFViewController.h"
+#import "UIView+YFMBProgressHUD.h"
 
 @interface YFViewController ()
 
@@ -18,6 +19,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [self.view yf_showActivity];
 }
 
 - (void)didReceiveMemoryWarning

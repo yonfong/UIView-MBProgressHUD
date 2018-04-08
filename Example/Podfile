@@ -1,8 +1,8 @@
 use_frameworks!
 
 target 'UIView-MBProgressHUD_Example' do
-  pod 'UIView-MBProgressHUD', :path => '../'
-
+  pod 'UIView+YFMBProgressHUD', :path => '../'
+  
   target 'UIView-MBProgressHUD_Tests' do
     inherit! :search_paths
 

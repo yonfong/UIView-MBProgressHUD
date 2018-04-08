@@ -10,7 +10,8 @@
 #endif
 #endif
 
+#import "UIView+YFMBProgressHUD.h"
 
-FOUNDATION_EXPORT double UIView_MBProgressHUDVersionNumber;
-FOUNDATION_EXPORT const unsigned char UIView_MBProgressHUDVersionString[];
+FOUNDATION_EXPORT double UIView_YFMBProgressHUDVersionNumber;
+FOUNDATION_EXPORT const unsigned char UIView_YFMBProgressHUDVersionString[];
 

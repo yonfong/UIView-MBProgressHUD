@@ -1,0 +1,6 @@
+framework module UIView_YFMBProgressHUD {
+  umbrella header "UIView+YFMBProgressHUD-umbrella.h"
+
+  export *
+  module * { export * }
+}
