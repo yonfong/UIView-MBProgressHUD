@@ -1,0 +1,26 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - Kiwi (3.0.0)
+  - UIView-MBProgressHUD (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - Kiwi
+  - UIView-MBProgressHUD (from `../`)
+
+EXTERNAL SOURCES:
+  UIView-MBProgressHUD:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  Kiwi: fbeafef0f00e4d8f7dcb3420a4930afe70af77f7
+  UIView-MBProgressHUD: eed694350f14f9c979b24815c3dd8809f5938048
+
+PODFILE CHECKSUM: 86fd21229303c392c19318fc8ad42725d4d8e24c
+
+COCOAPODS: 1.4.0

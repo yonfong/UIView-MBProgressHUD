@@ -1,0 +1,22 @@
+{
+  "name": "UIView-MBProgressHUD",
+  "version": "0.1.0",
+  "summary": "A short description of UIView-MBProgressHUD.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/bluesky0109/UIView-MBProgressHUD",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "bluesky0109": "yonfeng.zhang@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/bluesky0109/UIView-MBProgressHUD.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "UIView-MBProgressHUD/Classes/**/*"
+}

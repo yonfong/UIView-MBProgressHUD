@@ -38,9 +38,9 @@
 
 /* Begin PBXFileReference section */
 		143DF9EE0FCE9486AB23A7DF /* Pods_UIView_MBProgressHUD_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIView_MBProgressHUD_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		17BA33A09A7D2C78389821A1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		17BA33A09A7D2C78389821A1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3C0FD436F36910DC2C79B815 /* Pods-UIView-MBProgressHUD_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIView-MBProgressHUD_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIView-MBProgressHUD_Tests/Pods-UIView-MBProgressHUD_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		5FD2D32D7128BC3072EE89F5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		5FD2D32D7128BC3072EE89F5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* UIView-MBProgressHUD_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIView-MBProgressHUD_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,7 +66,7 @@
 		A83D2076B49FF8CF1082A1E3 /* Pods_UIView_MBProgressHUD_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIView_MBProgressHUD_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B389F37431835BFA522311D1 /* Pods-UIView-MBProgressHUD_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIView-MBProgressHUD_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIView-MBProgressHUD_Tests/Pods-UIView-MBProgressHUD_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B41384C966F728F312BC44D3 /* Pods-UIView-MBProgressHUD_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIView-MBProgressHUD_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIView-MBProgressHUD_Example/Pods-UIView-MBProgressHUD_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		CD067A9D4C231BFA0BBF8565 /* UIView-MBProgressHUD.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = "UIView-MBProgressHUD.podspec"; path = "../UIView-MBProgressHUD.podspec"; sourceTree = "<group>"; };
+		CD067A9D4C231BFA0BBF8565 /* UIView-MBProgressHUD.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "UIView-MBProgressHUD.podspec"; path = "../UIView-MBProgressHUD.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
