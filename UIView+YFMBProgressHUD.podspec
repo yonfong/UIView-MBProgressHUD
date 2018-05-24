@@ -38,5 +38,5 @@ based MBProgressHUD, easy-to-use, show activity、message、complete handle
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'MBProgressHUD', '~> 1.1.0'
+  s.dependency 'MBProgressHUD'
 end
