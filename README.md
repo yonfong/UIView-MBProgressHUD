@@ -17,7 +17,7 @@ UIView-MBProgressHUD is available through [CocoaPods](http://cocoapods.org). To 
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'UIView-MBProgressHUD'
+pod 'UIView+MBProgressHUD'
 ```
 
 ## Author
