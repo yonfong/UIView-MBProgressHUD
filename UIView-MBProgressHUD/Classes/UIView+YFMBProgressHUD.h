@@ -26,6 +26,19 @@
 
 - (MBProgressHUD *)yf_showError:(NSString *)error duration:(NSTimeInterval)duration completion:(MBProgressHUDCompletionBlock)completion;
 
+- (MBProgressHUD *)yf_showCustomView:(UIView *)customView duration:(NSTimeInterval)duration;
+
+- (MBProgressHUD *)yf_showCustomView:(UIView *)customView duration:(NSTimeInterval)duration completion:(MBProgressHUDCompletionBlock)completion;
+
+- (MBProgressHUD *)yf_showCustomView:(UIView *)customView
+                             message:(NSString *)message
+                            duration:(NSTimeInterval)duration;
+
+- (MBProgressHUD *)yf_showCustomView:(UIView *)customView
+                             message:(NSString *)message
+                            duration:(NSTimeInterval)duration
+                        completion:(MBProgressHUDCompletionBlock)completion;
+
 - (BOOL)yf_hideHUD;
 
 @end

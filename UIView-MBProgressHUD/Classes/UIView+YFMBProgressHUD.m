@@ -14,7 +14,7 @@
     if (!hud) {
         hud = [MBProgressHUD showHUDAddedTo:self animated:YES];
         hud.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;
-        hud.bezelView.color = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.85];
+        hud.bezelView.color = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.7];
         hud.detailsLabel.font = [UIFont systemFontOfSize:16.];
         hud.detailsLabel.numberOfLines = 0;
         hud.contentColor = [UIColor whiteColor];
@@ -61,16 +61,9 @@
 }
 
 - (MBProgressHUD *)yf_showSuccess:(NSString *)success duration:(NSTimeInterval)duration completion:(MBProgressHUDCompletionBlock)completion {
-    MBProgressHUD *hud = [self buildHUDIfNeed];
+    UIImageView *customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"icon_hud_success"]];
     
-    hud.mode = MBProgressHUDModeCustomView;
-    hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"icon_hud_success"]];
-    hud.detailsLabel.text = success;
-    hud.completionBlock = completion;
-    if (duration > 0) {
-        [hud hideAnimated:YES afterDelay:duration];
-    }
-    return hud;
+    return [self yf_showCustomView:customView message:success duration:duration completion:completion];
 }
 
 - (MBProgressHUD *)yf_showError:(NSString *)error duration:(NSTimeInterval)duration {
@@ -78,11 +71,34 @@
 }
 
 - (MBProgressHUD *)yf_showError:(NSString *)error duration:(NSTimeInterval)duration completion:(MBProgressHUDCompletionBlock)completion {
+    UIImageView *customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"icon_hud_failed"]];
+    
+    return [self yf_showCustomView:customView message:error duration:duration completion:completion];
+}
+
+- (MBProgressHUD *)yf_showCustomView:(UIView *)customView duration:(NSTimeInterval)duration {
+    return [self yf_showCustomView:customView duration:duration completion:nil];
+}
+
+- (MBProgressHUD *)yf_showCustomView:(UIView *)customView duration:(NSTimeInterval)duration completion:(MBProgressHUDCompletionBlock)completion {
+    return [self yf_showCustomView:customView message:nil duration:duration completion:completion];
+}
+
+- (MBProgressHUD *)yf_showCustomView:(UIView *)customView
+                             message:(NSString *)message
+                            duration:(NSTimeInterval)duration {
+    return [self yf_showCustomView:customView message:message duration:duration completion:nil];
+}
+
+- (MBProgressHUD *)yf_showCustomView:(UIView *)customView
+                             message:(NSString *)message
+                            duration:(NSTimeInterval)duration
+                          completion:(MBProgressHUDCompletionBlock)completion {
     MBProgressHUD *hud = [self buildHUDIfNeed];
     
     hud.mode = MBProgressHUDModeCustomView;
-    hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"icon_hud_failed"]];
-    hud.detailsLabel.text = error;
+    hud.customView = customView;
+    hud.detailsLabel.text = message;
     hud.completionBlock = completion;
     if (duration > 0) {
         [hud hideAnimated:YES afterDelay:duration];
