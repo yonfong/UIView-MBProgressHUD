@@ -1,4 +1,5 @@
 use_frameworks!
+platform :ios, '9.0'
 
 target 'UIView-MBProgressHUD_Example' do
   pod 'UIView+YFMBProgressHUD', :path => '../'
@@ -7,6 +8,5 @@ target 'UIView-MBProgressHUD_Example' do
     inherit! :search_paths
 
     pod 'Kiwi'
-    pod 'FBSnapshotTestCase'
   end
 end

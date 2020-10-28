@@ -1,8 +1,8 @@
 {
   "name": "UIView+YFMBProgressHUD",
-  "version": "0.1.0",
-  "summary": "A short description of UIView+YFMBProgressHUD.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "0.2.0",
+  "summary": "based MBProgressHUD, easy-to-use",
+  "description": "based MBProgressHUD, easy-to-use, show activity、message、complete handle",
   "homepage": "https://github.com/yonfong/UIView-MBProgressHUD.git",
   "license": {
     "type": "MIT",
@@ -13,15 +13,15 @@
   },
   "source": {
     "git": "https://github.com/yonfong/UIView-MBProgressHUD.git",
-    "tag": "0.1.0"
+    "tag": "0.2.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
   "source_files": "UIView-MBProgressHUD/Classes/**/*",
   "dependencies": {
     "MBProgressHUD": [
-      "~> 1.1.0"
+
     ]
   }
 }

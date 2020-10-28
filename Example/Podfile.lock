@@ -1,29 +1,27 @@
 PODS:
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
   - Kiwi (3.0.0)
   - MBProgressHUD (1.1.0)
-  - UIView+YFMBProgressHUD (0.1.0):
-    - MBProgressHUD (~> 1.1.0)
+  - "UIView+YFMBProgressHUD (0.2.0)":
+    - MBProgressHUD
 
 DEPENDENCIES:
-  - FBSnapshotTestCase
   - Kiwi
-  - UIView+YFMBProgressHUD (from `../`)
+  - "UIView+YFMBProgressHUD (from `../`)"
+
+SPEC REPOS:
+  trunk:
+    - Kiwi
+    - MBProgressHUD
 
 EXTERNAL SOURCES:
-  UIView+YFMBProgressHUD:
-    :path: ../
+  "UIView+YFMBProgressHUD":
+    :path: "../"
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Kiwi: fbeafef0f00e4d8f7dcb3420a4930afe70af77f7
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
-  UIView+YFMBProgressHUD: 5e9e3b993fd16cbc3bf55abb4de42f3f09323001
+  "UIView+YFMBProgressHUD": 9c5928c629d7bd9ebd0cbdae0c0ff1c620c2c947
 
-PODFILE CHECKSUM: 60e267e00bf7beb30d6357f530687f1af3a6cc2a
+PODFILE CHECKSUM: e33e1c21252489ce1175311151115e62c0182270
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.9.1

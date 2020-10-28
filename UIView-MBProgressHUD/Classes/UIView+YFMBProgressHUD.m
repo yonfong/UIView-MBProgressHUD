@@ -40,11 +40,11 @@
     return hud;
 }
 
-- (void)yf_showMessage:(NSString *)message duration:(NSTimeInterval)duration {
+- (MBProgressHUD *)yf_showMessage:(NSString *)message duration:(NSTimeInterval)duration {
     return [self yf_showMessage:message duration:duration completion:nil];
 }
 
-- (void)yf_showMessage:(NSString *)message duration:(NSTimeInterval)duration completion:(MBProgressHUDCompletionBlock)completion {
+- (MBProgressHUD *)yf_showMessage:(NSString *)message duration:(NSTimeInterval)duration completion:(MBProgressHUDCompletionBlock)completion {
     MBProgressHUD *hud = [self buildHUDIfNeed];
     
     hud.mode = MBProgressHUDModeText;
@@ -53,13 +53,14 @@
     if (duration > 0) {
         [hud hideAnimated:YES afterDelay:duration];
     }
+    return hud;
 }
 
-- (void)yf_showSuccess:(NSString *)success duration:(NSTimeInterval)duration {
+- (MBProgressHUD *)yf_showSuccess:(NSString *)success duration:(NSTimeInterval)duration {
     return [self yf_showSuccess:success duration:duration completion:nil];
 }
 
-- (void)yf_showSuccess:(NSString *)success duration:(NSTimeInterval)duration completion:(MBProgressHUDCompletionBlock)completion {
+- (MBProgressHUD *)yf_showSuccess:(NSString *)success duration:(NSTimeInterval)duration completion:(MBProgressHUDCompletionBlock)completion {
     MBProgressHUD *hud = [self buildHUDIfNeed];
     
     hud.mode = MBProgressHUDModeCustomView;
@@ -69,13 +70,14 @@
     if (duration > 0) {
         [hud hideAnimated:YES afterDelay:duration];
     }
+    return hud;
 }
 
-- (void)yf_showError:(NSString *)error duration:(NSTimeInterval)duration {
+- (MBProgressHUD *)yf_showError:(NSString *)error duration:(NSTimeInterval)duration {
     return [self yf_showError:error duration:duration completion:nil];
 }
 
-- (void)yf_showError:(NSString *)error duration:(NSTimeInterval)duration completion:(MBProgressHUDCompletionBlock)completion {
+- (MBProgressHUD *)yf_showError:(NSString *)error duration:(NSTimeInterval)duration completion:(MBProgressHUDCompletionBlock)completion {
     MBProgressHUD *hud = [self buildHUDIfNeed];
     
     hud.mode = MBProgressHUDModeCustomView;
@@ -85,6 +87,7 @@
     if (duration > 0) {
         [hud hideAnimated:YES afterDelay:duration];
     }
+    return hud;
 }
 
 - (BOOL)yf_hideHUD {

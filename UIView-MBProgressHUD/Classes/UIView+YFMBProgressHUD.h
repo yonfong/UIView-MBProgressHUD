@@ -14,17 +14,17 @@
 
 - (MBProgressHUD *)yf_showActivityMessage:(NSString *)message;
 
-- (void)yf_showMessage:(NSString *)message duration:(NSTimeInterval)duration;
+- (MBProgressHUD *)yf_showMessage:(NSString *)message duration:(NSTimeInterval)duration;
 
-- (void)yf_showMessage:(NSString *)message duration:(NSTimeInterval)duration completion:(MBProgressHUDCompletionBlock)completion;
+- (MBProgressHUD *)yf_showMessage:(NSString *)message duration:(NSTimeInterval)duration completion:(MBProgressHUDCompletionBlock)completion;
 
-- (void)yf_showSuccess:(NSString *)success duration:(NSTimeInterval)duration;
+- (MBProgressHUD *)yf_showSuccess:(NSString *)success duration:(NSTimeInterval)duration;
 
-- (void)yf_showSuccess:(NSString *)success duration:(NSTimeInterval)duration completion:(MBProgressHUDCompletionBlock)completion;
+- (MBProgressHUD *)yf_showSuccess:(NSString *)success duration:(NSTimeInterval)duration completion:(MBProgressHUDCompletionBlock)completion;
 
-- (void)yf_showError:(NSString *)error duration:(NSTimeInterval)duration;
+- (MBProgressHUD *)yf_showError:(NSString *)error duration:(NSTimeInterval)duration;
 
-- (void)yf_showError:(NSString *)error duration:(NSTimeInterval)duration completion:(MBProgressHUDCompletionBlock)completion;
+- (MBProgressHUD *)yf_showError:(NSString *)error duration:(NSTimeInterval)duration completion:(MBProgressHUDCompletionBlock)completion;
 
 - (BOOL)yf_hideHUD;
 
